@@ -9,11 +9,7 @@ const path = require("path");
 
 // Parse JSON bodies (as sent by API clients)
 app.use(express.json());
-app.use(
-  cors({
-    origin: ["https://localhost:5000"],
-  })
-);
+app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 
 // Connect to DATABASE
