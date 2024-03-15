@@ -7,7 +7,7 @@
     "start": "node index.js",
     "server": "npm start",
     "client": "npm start --prefix ./client",
-    "test": "mocha '__tests__/*.js' --reporter mochawesome --recursive  --timeout 60000 --exit",
+    "test": "mocha",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
